@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body 
+    {
+      background-color: #19a1ad;
+      overflow: hidden;
+    }
+    .top 
+    {
+      width: 800px;
+      position: absolute;
+      top: -300px;
+      left: 0;
+    }
+    .bottom 
+    {
+      width: 1100px;
+      position: absolute;
+      bottom: -600px;
+      right: -260px;
+    }
+    .attribution 
+    {
+      font-size: 11px; text-align: center;
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .attribution a 
+    { 
+      color: hsl(228, 45%, 44%); 
+    }
+    .main 
+    {
+      width: 350px;
+      height: 400px;
+      background-color: white;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      border-radius: 20px;
+      display: grid;
+      grid-template-rows: 150px 220px 80px;
+      justify-content: center;
+    }
+    .back 
+    {
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+    .pic 
+    {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .pic img 
+    {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 10px white solid;
+      margin-top: -70px;
+    }
+    .pic h2 
+    {
+      font-family: sans-serif;
+    }
+    .pic .name p 
+    {
+      font-size: 22px;
+      color: #7d7d83;
+    }
+    .name 
+    {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    .name h2 
+    {
+      color: #292b38;
+    }
+    .city 
+    {
+      margin-top: -10px;
+      font-size: 15px;
+      color: #7d7d83;
+      font-family: sans-serif;
+    }
+    .follow 
+    {
+      margin-top: -70px;
+      border-top: 1px solid #7d7d83;
+      display: flex;
+      padding-right: 10px;
+      padding-left: 10px;
+      gap: 40px;
+      justify-content: center;
+      font-family: sans-serif;
+      color: #292b38;
+      align-items: center;
+      height: 80px;
+    }
+    .follow div 
+    {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+    .follow div p 
+    {
+      margin: 0;
+      font-size: 12px;
+    }
+    .follow div h2 
+    {
+      margin-bottom: 5px;
+    }
+    @media (max-width: 767px)
+    {
+      .top 
+    {
+      width: 760px;
+      top: -490px;
+      left: -490px;
+    }
+    .bottom 
+    {
+      width: 760px;
+      bottom: -450px;
+      right: -510px;
+    }
+    .pic img 
+    {
+      width: 90px;
+      height: 90px;
+      border: 5px white solid;
+    }
+    .pic .name p 
+    {
+      font-size: 20px;
+    }
+    .name 
+    {
+      margin-top: 8px;
+    }
+    .name h2 
+    {
+      font-size: 19px;
+    }
+    .follow 
+    {
+      margin-top: -80px;
+      height: 90px;
+    }
+    .follow div p 
+    {
+      font-size: 11px;
+    }
+    .follow div h2 
+    {
+      font-size: 20px;
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <img src="/images/bg-pattern-card.svg" alt="" class="back">
+    <div class="pic">
+      <img src="/images/image-victor.jpg" alt="">
+      <div class="name">      
+        <h2>Victor Crest</h2>
+        <p>26</p>
+      </div>
+      <p class="city">London</p>
+    </div>
+    <div class="follow">
+      <div>
+        <h2>80K</h2>
+        <p>Followers</p>
+      </div>
+      <div>
+        <h2>803K</h2>
+        <p>Likes</p>
+      </div>
+      <div>
+        <h2>1.4K</h2>
+        <p>Photos</p>
+      </div>
+    </div>
+  </div>
+  <img src="/images/bg-pattern-top.svg" alt="" class="top">
+  <img src="/images/bg-pattern-bottom.svg" alt="" class="bottom">
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ahmed Mohamed Abdellatif</a>.
+  </div>
+</body>
+</html>
